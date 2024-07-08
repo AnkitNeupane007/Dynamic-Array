@@ -16,9 +16,10 @@ This C++ project implements a dynamic array class (`DynamicArray`) that allows f
 
 ### Initialization
 
-To use the `DynamicArray` class, initialize it with an initial size:
+To use the `DynamicArray` class, first include the `dynamic_array.h` in your program. Then initialize it with an initial size:
 
 ```cpp
+#include "dynamic_array.h"
 DynamicArray arr(3); // Initializes with a size of 3
 ```
 
