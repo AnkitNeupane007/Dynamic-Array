@@ -63,20 +63,9 @@ If there are two or more same numbers, it removes the last one.
 arr.pop_element(3);
 ```
 
-
-
-
-
-
 ### Viewing indexed elements
 
-
-
-
 Returns the value of array in index specified inside square brackets `[index]`
-
-
-
 
 ```cpp
 cout << arr[0] << endl;
