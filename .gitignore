@@ -1,0 +1,106 @@
+# Ignore object files and static libraries
+*.o
+*.a
+*.lo
+*.la
+
+# Ignore dynamic libraries
+*.dll
+*.so
+*.dylib
+
+# Ignore executable files
+*.exe
+*.out
+*.app
+
+# Ignore compiled files
+*.class
+
+# Ignore precompiled headers
+*.gch
+*.pch
+
+# Ignore dependency files
+*.d
+
+# Ignore coverage data
+*.gcda
+*.gcno
+*.gcov
+
+# Ignore debug and profiling files
+*.dSYM/
+*.dmp
+*.core
+*.profdata
+*.profraw
+
+# Ignore temporary files created by editors
+*~
+.*.swp
+.*.swo
+.DS_Store
+Thumbs.db
+
+# Ignore build directories
+/build/
+/bin/
+/obj/
+/lib/
+/CMakeFiles/
+/CMakeCache.txt
+/CMakeScripts/
+/Testing/
+/CTestTestfile.cmake
+/CMakeLists.txt.user
+
+# Ignore Makefile and Ninja files
+/Makefile
+/ninja.build
+/build.ninja
+/compile_commands.json
+
+# Ignore log files
+*.log
+
+# Ignore IDE project files (Visual Studio, Code::Blocks, Eclipse, etc.)
+*.vcxproj
+*.vcxproj.filters
+*.vcxproj.user
+*.sln
+*.cbp
+*.layout
+*.depend
+.cproject
+.project
+.idea/
+.vscode/
+
+# Ignore user-specific files
+*.user
+*.orig
+*.rej
+
+# Ignore package files
+*.tar
+*.gz
+*.zip
+*.7z
+*.jar
+
+
+# Ignore test executables and test data
+/tests/*.out
+/tests/*.exe
+/tests/*.dat
+/tests/*.log
+
+# Ignore configuration and environment files
+.env
+.env.local
+.env.*.local
+.env.test
+
+# Ignore any files in the temp folder
+/temp/*
