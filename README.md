@@ -68,5 +68,5 @@ arr.pop_element(3);
 Returns the value of array in index specified inside square brackets `[index]`
 
 ```cpp
-cout << arr[0] << endl;
+cout << arr[0] << endl; // Returns 1 if you have followed the previous steps
 ```
