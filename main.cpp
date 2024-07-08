@@ -24,7 +24,7 @@ int main()
 
     arr.return_size();
 
-    // Displaying the value of index inside [].
+    // Displaying the value of index inside []
     cout << arr[0] << endl;
 
     arr.display_element();
