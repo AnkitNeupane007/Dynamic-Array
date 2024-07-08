@@ -39,3 +39,45 @@ arr.add_element(1);
 // Or we can use { } to pass multiple elements at once
 arr.add_element({97, 2, 3, 3});
 ```
+
+### Displaying elements
+
+```cpp
+// Displays all the elements
+arr.display_element();
+```
+
+### Displaying current size of array
+
+```cpp
+// This returns the size of the array and the number of elements in it
+arr.return_size();
+```
+
+### Removing elements
+
+If there are two or more same numbers, it removes the last one.
+
+```cpp
+// This removes the number specified
+arr.pop_element(3);
+```
+
+
+
+
+
+
+### Viewing indexed elements
+
+
+
+
+Returns the value of array in index specified inside square brackets `[index]`
+
+
+
+
+```cpp
+cout << arr[0] << endl;
+```
