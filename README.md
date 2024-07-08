@@ -31,15 +31,6 @@ arr.add_element(1);
 arr.add_element({97, 2, 3, 3});
 ```
 
-### Adding elements
-
-```cpp
-// We can add a single element
-arr.add_element(1);
-// Or we can use { } to pass multiple elements at once
-arr.add_element({97, 2, 3, 3});
-```
-
 ### Displaying elements
 
 ```cpp
