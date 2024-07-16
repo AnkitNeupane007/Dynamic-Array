@@ -20,7 +20,7 @@ To use the `DynamicArray` class, first include the `dynamic_array.h` in your pro
 
 ```cpp
 #include "dynamic_array.h"
-DynamicArray arr(3); // Initializes with a size of 3
+DynamicArray<int> arr(3); // Initializes an integer array with a size of 3
 ```
 
 ### Adding elements

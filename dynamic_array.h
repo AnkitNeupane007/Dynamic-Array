@@ -2,17 +2,18 @@
 
 using namespace std;
 
+template <typename T>
 class DynamicArray
 {
 private:
 	int mySize;	  // Size of the array
 	int initial;  // Number of elements in the array
-	int *myArray; // Pointer to the array
+	T *myArray; // Pointer to the array
 
 public:
 	DynamicArray(int size) : mySize(size), initial(0)
 	{
-		myArray = new int[mySize];
+		myArray = new T[mySize];
 	}
 
 	~DynamicArray()
@@ -34,12 +35,12 @@ public:
 		cout << endl;
 	}
 
-	void add_element(int input)
+	void add_element(T input)
 	{
 		if (this->initial == this->mySize)
 		{
 			const int new_size = this->mySize * 2;
-			int *new_array = new int[new_size];
+			T *new_array = new T[new_size];
 			for (int i = 0; i < this->mySize; i++)
 			{
 				new_array[i] = this->myArray[i];
@@ -54,9 +55,9 @@ public:
 	}
 
 	// Multiple elements can be added at once
-	void add_element(const initializer_list<int> &inputs)
+	void add_element(const initializer_list<T> &inputs)
 	{
-		for (int input : inputs)
+		for (auto input : inputs)
 		{
 			add_element(input);
 		}
@@ -67,7 +68,7 @@ public:
 		cout << "Size: " << this->mySize << ", Elements: " << this->initial << endl;
 	}
 
-	void pop_element(int get)
+	void pop_element(T get)
 	{
 		if (this->initial == 0)
 		{
@@ -93,7 +94,7 @@ public:
 				if (this->initial <= this->mySize / 2 && this->initial > 1)
 				{
 					int shrink_size = this->mySize / 2;
-					int *shrink_array = new int[shrink_size];
+					T *shrink_array = new T[shrink_size];
 					for (int i = 0; i < this->initial; i++)
 					{
 						shrink_array[i] = this->myArray[i];
@@ -109,14 +110,14 @@ public:
 			cout << "Not there." << endl;
 	}
 
-	int& operator[](int index){
+	T& operator[](int index){
 		return this->myArray[index];
 	}
 
 	void delete_all()
 	{
 		delete[] this->myArray;
-		this->myArray = new int[2];
+		this->myArray = new T[2];
 		this->mySize = 1;
 		this->initial = 0;
 	}
